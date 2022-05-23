@@ -1,0 +1,62 @@
+@import "../utils/zoom.scss";
+@import "../utils/shadow.scss";
+@import "../utils/variables.scss";
+
+
+.indication{
+    counter-reset: steps;
+
+    ol{
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    @media (max-width:900px) {
+        ol{
+            flex-direction: column;
+        }
+    }
+    li{
+        position: relative;
+        &::before{
+        content: counter(steps);
+            counter-increment: steps;
+            color: white;
+            font-size: 2rem;
+            background-color: #9356dc;
+            height: 3*$base-height;
+            width: 3*$base-height;
+            display: grid;
+            place-items:center ;
+            position: absolute;
+            left: -$base-height;
+            bottom: $base-height;
+            border-radius: 50%;
+
+        }
+        list-style-type: none;
+        background-color: #f6f6f6;
+        border-radius: 2rem;
+        padding: 1rem 3rem;
+        flex-grow: 1;
+        @include shadow;
+    }
+.choix{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+    
+.fa-solid{
+    font-size: 3rem;
+    margin-right: 2rem;
+    color:gray; 
+}
+    h2{
+        font-size: 2.5rem;
+    }
+
+    li:hover{
+        transform: scale(1.03);
+    }
+}

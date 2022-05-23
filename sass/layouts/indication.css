@@ -1,0 +1,52 @@
+.indication {
+  counter-reset: steps;
+}
+.indication ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  .indication ol {
+    flex-direction: column;
+  }
+}
+.indication li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  flex-grow: 1;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0);
+}
+.indication li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  font-size: 2rem;
+  background-color: #9356dc;
+  height: 3rem;
+  width: 3rem;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: -1rem;
+  bottom: 1rem;
+  border-radius: 50%;
+}
+.indication .choix {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.indication .fa-solid {
+  font-size: 3rem;
+  margin-right: 2rem;
+  color: gray;
+}
+.indication h2 {
+  font-size: 2.5rem;
+}
+.indication li:hover {
+  transform: scale(1.03);
+}/*# sourceMappingURL=indication.css.map */
