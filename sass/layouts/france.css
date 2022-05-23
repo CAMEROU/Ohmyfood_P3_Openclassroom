@@ -1,0 +1,13 @@
+main .france {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+main .france .fa-map-marker-alt,
+main .france h2 {
+  font-size: 3.5rem;
+}/*# sourceMappingURL=france.css.map */

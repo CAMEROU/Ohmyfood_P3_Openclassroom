@@ -1,0 +1,11 @@
+header {
+  font-family: "Shrikhand", "cursive";
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+}
+
+header .resto h1 {
+  font-size: 5rem;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,32 @@
+
+/** DECOUVERTE DES RESTOS **/
+
+#explorez{
+    text-align: center;
+  
+  
+   h2{
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+   p{
+    font-size: 3.1rem;
+  }
+  
+   button{
+    background-image: linear-gradient(#FF79DA, #9356dc);
+    padding: 2rem 5rem;
+    font-size: 2.5rem;
+    border-radius: 4rem;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 0 0.5rem #0000(0 0 0 25%);
+    border: none;
+    opacity: 1.01;
+    margin-top: 1.5rem;
+    transition: all (100ms);
+   }
+  button:hover{
+    transform: scale(1.03);
+  }
+  }
